@@ -79,6 +79,8 @@ from vertexai.generative_models import GenerativeModel
 
 _, project = google.auth.default()
 
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+
 app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
