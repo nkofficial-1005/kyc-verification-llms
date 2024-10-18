@@ -84,7 +84,7 @@ app = Flask(__name__)
 @app.route("/", methods=['GET', 'POST'])
 def validate_kyc_document():
     # Path to your KYC document image
-    file_path = "/home/nikita_datascience/kyc-verification-llms/passport-front.jpg"
+    file_path = "/home/nikita_datascience/Design-Invoice.jpg"
     
     # Using Pytesseract to convert image to text
     try:
