@@ -79,7 +79,7 @@ from vertexai.generative_models import GenerativeModel
 
 _, project = google.auth.default()
 
-pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = '~/.local/bin/tesseract'
 
 app = Flask(__name__)
 
